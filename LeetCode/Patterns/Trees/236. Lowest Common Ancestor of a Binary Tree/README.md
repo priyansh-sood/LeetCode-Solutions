@@ -8,8 +8,8 @@
 Tree, Depth-First Search, Binary Tree, Binary Lifting, Lowest Common Ancestor
 
 ### 🚀 Performance
-- **Runtime:** 66 ms
-- **Memory:** 43.9 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
