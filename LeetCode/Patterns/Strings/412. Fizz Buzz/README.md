@@ -1,6 +1,6 @@
 # 📝 412. Fizz Buzz (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/fizz-buzz/?envType=problem-list-v2&envId=string)
+🔗 [Problem Link](https://leetcode.com/problems/fizz-buzz/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Math, String, Simulation
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 2 ms
+- **Memory:** 11.8 MB
 
 ---
 
