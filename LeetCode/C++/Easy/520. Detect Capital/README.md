@@ -1,6 +1,6 @@
 # 📝 520. Detect Capital (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/detect-capital/)
+🔗 [Problem Link](https://leetcode.com/problems/detect-capital/?envType=problem-list-v2&envId=string)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 String
 
 ### 🚀 Performance
-- **Runtime:** 0 ms
-- **Memory:** 8.2 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
