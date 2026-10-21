@@ -8,7 +8,10 @@ public:
         char max = *max_element (s.begin(),s.end());
         
         if (s[0]== min || s[n-1]== max ) return 1;
-        if (s[0]== max && s[n-1]== min ) return 3;
+        if (s[0]== max && s[n-1]== min ) {
+             if (s[1] == max || s[n-2] == min) return 2;
+             return 3;
+        }
         return 2;
     }
 };
