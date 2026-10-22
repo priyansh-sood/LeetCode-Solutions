@@ -9,6 +9,7 @@ public:
            if (find(nums2.begin(), nums2.end(), x) != nums2.end())
     ans.push_back(x);
         }
+        
         return ans;
     }
 };
