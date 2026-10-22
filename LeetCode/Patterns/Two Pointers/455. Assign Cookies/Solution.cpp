@@ -6,16 +6,24 @@ public:
         int ans =0;
         sort (g.begin(),g.end());
         sort (s.begin(),s.end());
-      for (int i =0 ;i< n ;i++){
-         for (int j =0;j<m;j++){
+        int i =0;
+        int j =0;
+        
+        while (i<n&& j<m ){
+             
             if (g[i]<=s[j]){
                 ans++;
-                s[j]=0;
-                break;
+                j++;
+                
 
             }
-         }
-      }
+            else {
+                j++;
+            }
+            i++;
+
+        }
+  
       return ans;
     }
 };
