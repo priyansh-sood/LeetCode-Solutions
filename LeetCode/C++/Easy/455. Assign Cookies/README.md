@@ -1,6 +1,6 @@
 # 📝 455. Assign Cookies (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/assign-cookies/?envType=problem-list-v2&envId=two-pointers)
+🔗 [Problem Link](https://leetcode.com/problems/assign-cookies/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
