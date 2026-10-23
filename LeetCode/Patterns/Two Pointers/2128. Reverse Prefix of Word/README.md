@@ -8,8 +8,8 @@
 Two Pointers, String, Stack
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 0 ms
+- **Memory:** 8.4 MB
 
 ---
 
