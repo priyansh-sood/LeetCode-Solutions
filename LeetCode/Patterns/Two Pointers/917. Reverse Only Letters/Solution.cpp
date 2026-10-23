@@ -5,7 +5,7 @@ public:
         int st =0;
         int end = n-1;
         while (st<=end){
-            if (!isalpha(s[st])) st++;
+            whil (!isalpha(s[st])) st++;
             if (!isalpha(s[end]))end--;
             else {
                 swap (s[st],s[end]);
