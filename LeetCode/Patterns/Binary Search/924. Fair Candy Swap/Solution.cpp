@@ -2,25 +2,18 @@
 class Solution {
 public:
     vector<int> fairCandySwap(vector<int>& aliceSizes, vector<int>& bobSizes) {
-        int n = aliceSizes.size();
-        int m = bobSizes.size();
+        int sumA = accumulate(aliceSizes.begin(), aliceSizes.end(), 0);
+        int sumB = accumulate(bobSizes.begin(), bobSizes.end(), 0);
 
-        int alicecandies = 0, bobcandies = 0;
+        int diff = (sumA - sumB) / 2;
 
-        for (int i = 0; i < n; i++)
-            alicecandies += aliceSizes[i];
+        unordered_set<int> st(bobSizes.begin(), bobSizes.end());
 
-        for (int j = 0; j < m; j++)
-            bobcandies += bobSizes[j];
+        for (int x : aliceSizes) {
+            int y = x - diff;
 
-        int equalcandies = (alicecandies + bobcandies) / 2;
-        int aliceneedcandies = equalcandies - alicecandies;
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (bobSizes[j] - aliceSizes[i] == aliceneedcandies)
-                    return {aliceSizes[i], bobSizes[j]};
-            }
+            if (st.count(y))
+                return {x, y};
         }
 
         return {};
