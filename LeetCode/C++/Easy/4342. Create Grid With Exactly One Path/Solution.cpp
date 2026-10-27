@@ -1,30 +1,21 @@
 class Solution {
 public:
     vector<string> createGrid(int m, int n) {
-        vector <string > ans;
-        int elements = m*n;
-             string s;
-            
-        for (int i =0;i< n ;i++){
-        s.push_back('.');
-           
-        }
-         ans.push_back (s);
-        int row =1;
-      
-        while (row < m){
-            string p="";
-            int column =0;
-            while (column < n-1){
-                p.push_back('#');
-                column ++;
+        vector<string> ans;
 
+        for (int row = 0; row < m; row++) {
+            string s = "";
+
+            for (int column = 0; column < n; column++) {
+                if (row == 0 || column == n - 1)
+                    s.push_back('.');
+                else
+                    s.push_back('#');
             }
-            p.push_back('.');
-            ans.push_back(p);
-            row++;
 
+            ans.push_back(s);
         }
-     return ans;   
+
+        return ans;
     }
 };
