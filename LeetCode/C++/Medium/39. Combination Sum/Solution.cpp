@@ -1,54 +1,41 @@
 class Solution {
 public:
 
-    vector<vector<int>> ans;
-    vector<int> path;
+    void solve(int idx, vector<int>& candidates,
+               vector<int>& temp, vector<vector<int>>& ans,
+               int target) {
 
-    void solve(int i,
-               vector<int>& candidates,
-               int target){
-
-        // Found answer
-        if(target == 0){
-
-            ans.push_back(path);
-
+        // Base condition
+        if (target == 0) {
+            ans.push_back(temp);
             return;
         }
 
-        // Out of bounds
-        if(i == candidates.size()){
-
+        if (idx == candidates.size())
             return;
+
+        // PICK
+        if (candidates[idx] <= target) {
+
+            temp.push_back(candidates[idx]);
+
+            solve(idx, candidates, temp, ans,
+                  target - candidates[idx]);
+
+            temp.pop_back();
         }
 
-        // TAKE
-
-        if(candidates[i] <= target){
-
-            path.push_back(candidates[i]);
-
-            solve(i,
-                  candidates,
-                  target - candidates[i]);
-
-            path.pop_back();
-        }
-
-
-        // NOT TAKE
-
-        solve(i+1,
-              candidates,
-              target);
+        // NOT PICK
+        solve(idx + 1, candidates, temp, ans, target);
     }
 
+    vector<vector<int>> combinationSum(vector<int>& candidates,
+                                       int target) {
 
-    vector<vector<int>> combinationSum(
-        vector<int>& candidates,
-        int target) {
+        vector<int> temp;
+        vector<vector<int>> ans;
 
-        solve(0,candidates,target);
+        solve(0, candidates, temp, ans, target);
 
         return ans;
     }
