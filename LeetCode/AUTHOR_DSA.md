@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 7 / 238 (2.9%)
+- **Completed:** 8 / 238 (3.4%)
 
 ---
 
@@ -20,7 +20,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] Harshad Number
 - [ ] Check if Number is Fascinating
 - [ ] Rotated Digits
-- [ ] Happy Number
+- [x] [Happy Number](./C++/Easy/202. Happy Number/)
 
 ### 📂 MODULE  2.3: FACTORS, DIVISORS & PERFECT
 - [ ] Three Divisors
